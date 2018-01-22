@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  	<classes>
+  		<class name="test.KeywordDriven">
+  			
+  			<methods>
+  				<include name = "test19" />
+  				<include name = "test13" />
+  				<include name = "test12" />
+  				<exclude name = "test17" />
+  				<include name = "test15" />
+  				<include name = "test11" />
+  				<include name = "test10" />
+  				
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Sanity">
+  	<classes>
+  		<class name="test.RegisterRSL">
+  			
+  			<methods>
+  				<include name = "test2" />
+  				
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+   <test name="Regression">
+  	<classes>
+  		<class name="test.KeywordDriven">
+  			
+  			<methods>
+  				<include name = "test19" />
+  				<include name = "test13" />
+  				<include name = "test12" />
+  				<include name = "test17" />
+  				<include name = "test15" />
+  				<include name = "test11" />
+  				<include name = "test10" />
+  				
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

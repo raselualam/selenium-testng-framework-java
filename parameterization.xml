@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="suite-level-param" value="This is suite level param"></parameter>
+  
+  <test name="Suite Test">
+  <classes>
+  <class name="dataprovider.Parameterization">
+  <methods>
+  <include name="firstTest"></include>
+  </methods>
+  </class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test name="Suite Test2">
+  <parameter name="test-level-param" value="This is test level param"></parameter>
+  <classes>
+  <class name="dataprovider.Parameterization">
+  <methods>
+  <include name="secondTest"></include>
+  </methods>
+  </class>
+  </classes>
+  </test> <!-- Test -->
+  
+  <test name="Suite Test3">
+  <parameter name="suite-level-param" value="override suite level param"></parameter>
+  <parameter name="test-level-param1" value="this is another test level param"></parameter>
+  <classes>
+  <class name="dataprovider.Parameterization">
+  <methods>
+  <include name="thirdTest"></include>
+  </methods>
+  </class>
+  </classes>
+  </test> <!-- Test --> 
+  
+</suite> <!-- Suite -->

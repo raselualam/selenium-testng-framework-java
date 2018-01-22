@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test name="Smoke Test">
+  	<classes>
+  		<class name="HomepageTest">
+  			<methods>
+  				<include name = "loginTest" />
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+  <test name="Functional Test">
+  	<classes>
+  		<class name="HomepageTest">
+  			
+  			<methods>
+  				<include name = "createShipmentTest" />
+  				<include name = "createReturnTest" />
+  				<include name = "calculateTimeCostTest" />
+  				<include name = "schedulePickupTest" />
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+   <test name="Regression Test">
+  	<classes>
+  		<class name="HomepageTest">
+  			
+  			<methods>
+  				<include name = "loginTest" />
+  				<include name = "createShipmentTest" />
+  				<include name = "createReturnTest" />
+  				<include name = "calculateTimeCostTest" />
+  				<include name = "schedulePickupTest" />
+  			</methods>
+  		</class>
+  	</classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
